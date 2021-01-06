@@ -114,7 +114,18 @@ body {
 .adress .item:focus {
   color: var(--text-accent-color);
 }
-
+.icon-env {
+  width: 16px;
+  height: 12px;
+  fill: var(--text-accent-color);
+  margin-right: 10px;
+}
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  fill: var(--text-accent-color);
+  margin-right: 10px;
+}
 /*Hero*/
 .hero {
   max-width: 1600px;
@@ -163,17 +174,13 @@ body {
   margin-top: 94px;
 }
 
-.feature-point {
-  width: 270px;
-}
-
 .feature-point::before {
   content: '';
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  background-color: var(--button-portfolio-color);
-  border: 4px;
+  background-color: var(--background-portfolio-color);
+  border-radius: 4px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -189,7 +196,6 @@ body {
 .feature-point:nth-child(4)::before {
   background-image: url(../images/icons/astronaut.svg);
 }
-
 .advantages .feature-point + .feature-point {
   margin-left: 30px;
 }
@@ -236,6 +242,8 @@ body {
   margin-left: 30px;
 }
 .card {
+  width: 270px;
+  height: 428px;
   background-color: var(--background-main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -259,6 +267,13 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 10px;
+}
+
+.social-networks {
+  display: flex;
+}
+.icon-social {
+  outline: 1px solid red;
 }
 /*Clients*/
 .clients {
