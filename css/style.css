@@ -268,12 +268,17 @@ body {
   text-align: center;
   margin-top: 10px;
 }
-
-.social-networks {
-  display: flex;
+.social-list {
+  width: 44px;
+  height: 44px;
 }
-.icon-social {
-  outline: 1px solid red;
+.social-networks {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+.social-networks .icon-social + .icon-social {
+  margin-left: 10px;
 }
 /*Clients*/
 .clients {
