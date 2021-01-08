@@ -110,6 +110,9 @@ body {
 .adress .item + .item {
   margin-left: 30px;
 }
+.adress .item {
+  color: var(--text-main-color);
+}
 .adress .item:hover,
 .adress .item:focus {
   color: var(--text-accent-color);
@@ -312,7 +315,7 @@ body {
   margin-left: 30px;
 }
 
-.clients-name:nth-child(1) {
+/*.clients-name:nth-child(1) {
   background-image: url(../images/icons/client1.svg);
 }
 .clients-name:nth-child(2) {
@@ -329,6 +332,51 @@ body {
 }
 .clients-name:nth-child(6) {
   background-image: url(../images/icons/client6.svg);
+}*/
+
+/*Footer*/
+.footer {
+  width: 1600px;
+  height: 252px;
+  background-color: var(--background-head-color);
+
+  display: flex;
+  align-items: center;
+}
+.foot-ad {
+  display: block;
+  margin-left: 215px;
+}
+.footer .logo {
+  display: block;
+
+  color: var(--text-accent-color);
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.footer .logo-foot {
+  color: var(--text-contrast-color);
+}
+.footer .point {
+  font-size: 400;
+  font: weight 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-contrast-color);
+}
+.adress-foot.list {
+  color: var(--text-contrast-color);
+  margin-bottom: 9px;
+}
+.footer .appeal {
+  font-size: 700;
+  font-weight: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-contrast-color);
+
+  margin-left: 70px;
 }
 
 /*Potfolio*/
@@ -401,7 +449,7 @@ body {
   padding-bottom: 4px;
   padding-left: 24px;
 }
-.project-tekst {
+.project-text {
   font-size: 400;
   font-weight: 16px;
   line-height: 1.88;
