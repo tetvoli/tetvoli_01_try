@@ -110,7 +110,8 @@ body {
 .adress .item + .item {
   margin-left: 30px;
 }
-.adress .item {
+.adress .item-point {
+  text-decoration: none;
   color: var(--text-main-color);
 }
 .adress .item:hover,
@@ -137,7 +138,12 @@ body {
   margin-right: auto;
   background-color: var(--background-head-color);
 
-  background-image: url(../images/hero-min.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-min.jpg);
   color: var(--background-text-color);
   text-align: center;
   letter-spacing: 0.06em;
@@ -274,18 +280,26 @@ body {
 .social-list {
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 .social-networks {
   margin-top: 16px;
   display: flex;
   justify-content: center;
 }
-.social-networks .icon-social + .icon-social {
+.social-networks .social-list + .social-list {
   margin-left: 10px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--text-secondary-color);
 }
 .social-networks .social-list:hover,
 .social-networks .social-list:focus {
   background-color: var(--button-color);
+  fill: var(--text-contrast-color);
 }
 
 /*Clients*/
@@ -364,8 +378,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-contrast-color);
 }
-.adress-foot.list {
+.adress-foot .foot-point {
   color: var(--text-contrast-color);
+  text-decoration: none;
   margin-bottom: 9px;
 }
 .footer .appeal {
