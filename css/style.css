@@ -322,13 +322,20 @@ body {
   width: 170px;
   height: 90px;
   justify-content: center;
-
+  align-items: center;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 .clients .clients-name + .clients-name {
   margin-left: 30px;
+}
+.clients-name:hover,
+.clients-name:focus {
+  border-color: var(--button-color);
+}
+.clients-name .aria-label:hover,
+.clients-name .aria-label:focus {
+  fill: var(--button-color);
 }
 
 /*Footer*/
@@ -339,9 +346,15 @@ body {
   display: flex;
   align-items: center;
 }
+.container-footer {
+  display: flex;
+  align-content: center;
+}
 .foot-ad {
   display: block;
   margin-left: 215px;
+  padding-bottom: 90px;
+  padding-bottom: 90px;
 }
 .foot-ad .social-networks {
   margin-top: 0;
@@ -362,11 +375,22 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-contrast-color);
-}
-.adress-foot .foot-point {
-  color: var(--text-contrast-color);
-  text-decoration: none;
   margin-bottom: 9px;
+}
+.adress-foot .list {
+  margin-bottom: 9px;
+}
+.adress-foot .list .item:nth-last-child {
+  margin-bottom: 0;
+}
+
+.adress-foot .foot-point {
+  color: var(--text-sociallink-color);
+  text-decoration: none;
+}
+.soc-link {
+  display: block;
+  margin-left: 70px;
 }
 .footer .appeal {
   font-size: 700;
@@ -375,7 +399,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-contrast-color);
-  margin-left: 70px;
 }
 .soc-link .social-list {
   display: flex;
