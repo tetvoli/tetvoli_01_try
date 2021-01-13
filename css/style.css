@@ -162,7 +162,8 @@ body {
   font-size: 44px;
   line-height: 1.36;
 }
-.hero button {
+.hero-button {
+  min-width: 200px;
   margin-top: 30px;
   margin-bottom: 200px;
   padding-top: 10px;
@@ -172,9 +173,10 @@ body {
 
   background-color: var(--button-color);
   color: var(--text-contrast-color);
-  font: weight 400;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -187,6 +189,9 @@ body {
 .advantages {
   display: flex;
   margin-top: 94px;
+}
+.feature-point {
+  width: 270px;
 }
 .feature-point::before {
   content: '';
@@ -406,7 +411,9 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
+
 .soc-link .social-list:hover,
 .soc-link .social-list:focus {
   background-color: var(--button-color);
