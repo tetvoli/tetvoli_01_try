@@ -135,6 +135,15 @@ body {
 .adress .item-point:hover,
 .adress .item-point:focus {
   color: var(--text-accent-color);
+  fill: var(--text-accent-color);
+}
+.icon-env:focus,
+.icon-env:hover {
+  fill: var(--text-accent-color);
+}
+.icon-tel:focus,
+.icon-tel:hover {
+  fill: var(--text-accent-color);
 }
 
 /*Hero*/
@@ -331,6 +340,7 @@ body {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  fill: var(--text-sociallink-color);
 }
 .clients .clients-name + .clients-name {
   margin-left: 30px;
@@ -338,9 +348,6 @@ body {
 .clients-name:hover,
 .clients-name:focus {
   border-color: var(--button-color);
-}
-.client-logo .button-icon:hover,
-.client-logo .button-icon:focus {
   fill: var(--button-color);
 }
 
